@@ -37,28 +37,28 @@ Built a small office network with a Cisco 2911 router, Cisco 2960 switch, and fo
 **Diagnosis:** Used `show vlan brief` to inspect port membership.  
 **Resolution:** Reassigned Fa0/2 to VLAN 10 and retested connectivity.
 
-## Screenshots and evidence
+## Project deliverables
 
-Once the screenshots are uploaded to the `screenshots/` folder, these links will open each step:
+- **[Open the illustrated lab report](Networking_Troubleshooting_Lab_Report.docx)** — Word document with 12 labeled screenshots and descriptions of the network setup, testing, and troubleshooting.
+- **[Download the Packet Tracer project](Office-Network-Troubleshooting.pkt)** — open the working topology and device configurations in Cisco Packet Tracer.
 
-1. [Network topology](screenshots/01-network-topology.png)
-2. [VLAN configuration](screenshots/02-vlan-configuration.png)
-3. [PC IP configuration](screenshots/03-pc-ip-configuration.png)
-4. [Switch trunk configuration](screenshots/04-switch-trunk-configuration.png)
-5. [Router subinterfaces](screenshots/05-router-subinterfaces.png)
-6. [VLAN 10 connectivity test](screenshots/06-vlan10-connectivity-test.png)
-7. [Inter-VLAN connectivity](screenshots/07-inter-vlan-connectivity.png)
-8. [Failed ping — incorrect gateway](screenshots/08-network-troubleshooting-failed-ping.png)
-9. [Connectivity restored — gateway fix](screenshots/09-network-connectivity-restored.png)
-10. [Incorrect VLAN assignment](screenshots/10-vlan-misconfiguration.png)
-11. [Corrected VLAN assignment](screenshots/11-vlan-misconfiguration-fixed.png)
-12. [VLAN connectivity restored](screenshots/12-vlan-connectivity-restored.png)
+### Screenshot guide
+The illustrated Word report contains these 12 pieces of evidence:
 
-## Project files (upload pending)
-
-- `Office-Network-Troubleshooting.pkt` — Cisco Packet Tracer project.
-- `screenshots/` — 12 numbered screenshots.
-- `Networking_Troubleshooting_Lab_Report.docx` — illustrated Word report with descriptions.
+| # | Evidence | What it demonstrates |
+|---|---|---|
+| 01 | Network topology | Router, switch, and four-PC office layout |
+| 02 | VLAN configuration | Department-based network segmentation |
+| 03 | PC IP configuration | Static IPv4 addressing and default gateway |
+| 04 | Switch trunk configuration | 802.1Q trunk verification |
+| 05 | Router subinterfaces | Router-on-a-stick interfaces and IPs |
+| 06 | VLAN 10 connectivity | Same-VLAN ICMP testing |
+| 07 | Inter-VLAN connectivity | Routing between IT and HR |
+| 08 | Failed ping | Incorrect default gateway symptom |
+| 09 | Connectivity restored | Corrected default gateway |
+| 10 | VLAN misconfiguration | Wrong switch access VLAN diagnosis |
+| 11 | VLAN correction | Restored port to VLAN 10 |
+| 12 | Connectivity restored | Verification after VLAN fix |
 
 ## Skills demonstrated
 VLAN segmentation · IPv4 addressing · Router-on-a-Stick · 802.1Q trunking · Cisco CLI · ICMP testing · Network troubleshooting · Technical documentation
